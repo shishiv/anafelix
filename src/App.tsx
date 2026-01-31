@@ -6,6 +6,7 @@ import Depoimentos from './sections/Depoimentos';
 import Servicos from './sections/Servicos';
 import CTA from './sections/CTA';
 import Footer from './sections/Footer';
+import AboutUsSection from '@/components/ui/about-us-section';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <AboutUsSection />
         <Beneficios />
         <ComoFunciona />
         <Depoimentos />

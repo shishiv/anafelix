@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Clock, Check, Sparkles, Users, Zap, Gift } from 'lucide-react';
+import { Clock, Check, Zap, Sparkles, Users } from 'lucide-react';
 
 const servicos = [
   {
@@ -89,111 +89,81 @@ const Servicos = () => {
       ref={sectionRef}
       className="relative w-full py-24 lg:py-32 overflow-hidden bg-white"
     >
-      {/* Background Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-[5%] text-ana-primary opacity-5 text-[20rem] font-serif">
-          ॐ
-        </div>
-        <div className="absolute bottom-20 right-[5%] text-ana-accent opacity-5 text-[15rem] font-serif">
-          ☸
-        </div>
-      </div>
-
       <div className="section-container relative z-10">
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="reveal opacity-0 inline-block font-montserrat text-sm text-ana-accent font-medium tracking-wider uppercase mb-4">
-            Escolha seu Caminho
-          </span>
-          <h2 className="reveal opacity-0 font-cormorant text-4xl sm:text-5xl lg:text-6xl font-semibold text-ana-primary mb-6 animation-delay-200">
+          <h2 className="reveal opacity-0 font-cormorant text-4xl sm:text-5xl lg:text-6xl font-semibold text-ana-primary mb-6">
             Serviços
             <br />
             <span className="gradient-text">Transformadores</span>
           </h2>
-          <p className="reveal opacity-0 font-montserrat text-lg text-ana-dark/70 animation-delay-400">
-            Cada serviço é projetado para atender às suas necessidades específicas, 
-            desde uma limpeza pontual até uma transformação completa.
+          <p className="reveal opacity-0 font-montserrat text-lg text-ana-dark/70 animation-delay-200">
+            Cada serviço é projetado para atender às suas necessidades específicas.
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {servicos.map((servico, index) => (
             <div
               key={servico.title}
-              className={`reveal opacity-0 relative rounded-3xl overflow-hidden ${
+              className={`reveal opacity-0 relative rounded-2xl overflow-hidden ${
                 servico.highlighted
-                  ? 'gradient-bg text-white lg:scale-105 lg:-my-4 shadow-glow'
+                  ? 'gradient-bg text-white lg:scale-105 lg:-my-4'
                   : 'bg-ana-tertiary text-ana-dark'
               }`}
-              style={{ animationDelay: `${(index + 2) * 150}ms` }}
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Popular Badge */}
               {servico.highlighted && (
-                <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+                <div className="absolute top-4 right-4 bg-white/20 px-3 py-1 rounded-full">
                   <span className="font-montserrat text-xs font-medium">MAIS POPULAR</span>
                 </div>
               )}
 
-              <div className="p-8 lg:p-10">
-                {/* Icon */}
-                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${
+              <div className="p-8">
+                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
                   servico.highlighted ? 'bg-white/20' : 'bg-white'
                 }`}>
-                  <servico.icon 
-                    size={32} 
-                    className={servico.highlighted ? 'text-white' : 'text-ana-primary'}
-                    strokeWidth={1.5}
-                  />
+                  <servico.icon className={`w-6 h-6 ${servico.highlighted ? 'text-white' : 'text-ana-primary'}`} />
                 </div>
 
-                {/* Title */}
-                <p className={`font-montserrat text-sm mb-2 ${
+                <p className={`font-montserrat text-xs mb-1 ${
                   servico.highlighted ? 'text-white/70' : 'text-ana-accent'
                 }`}>
                   {servico.subtitle}
                 </p>
-                <h3 className={`font-cormorant text-2xl lg:text-3xl font-semibold mb-4 ${
+                <h3 className={`font-cormorant text-2xl font-semibold mb-3 ${
                   servico.highlighted ? 'text-white' : 'text-ana-primary'
                 }`}>
                   {servico.title}
                 </h3>
 
-                {/* Duration */}
-                <div className={`flex items-center gap-2 mb-4 ${
+                <div className={`flex items-center gap-2 mb-3 ${
                   servico.highlighted ? 'text-white/70' : 'text-ana-dark/60'
                 }`}>
-                  <Clock size={16} />
-                  <span className="font-montserrat text-sm">{servico.duration}</span>
+                  <Clock size={14} />
+                  <span className="font-montserrat text-xs">{servico.duration}</span>
                 </div>
 
-                {/* Price */}
-                <div className="mb-6">
-                  <span className={`font-cormorant text-4xl lg:text-5xl font-bold ${
+                <div className="mb-4">
+                  <span className={`font-cormorant text-3xl font-bold ${
                     servico.highlighted ? 'text-white' : 'text-ana-primary'
                   }`}>
                     {servico.price}
                   </span>
                 </div>
 
-                {/* Description */}
-                <p className={`font-montserrat text-sm leading-relaxed mb-8 ${
+                <p className={`font-montserrat text-sm leading-relaxed mb-6 ${
                   servico.highlighted ? 'text-white/80' : 'text-ana-dark/70'
                 }`}>
                   {servico.description}
                 </p>
 
-                {/* Features */}
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-2 mb-6">
                   {servico.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3">
-                      <Check 
-                        size={18} 
-                        className={`mt-0.5 flex-shrink-0 ${
-                          servico.highlighted ? 'text-white' : 'text-ana-primary'
-                        }`}
-                      />
-                      <span className={`font-montserrat text-sm ${
+                    <li key={feature} className="flex items-start gap-2">
+                      <Check className={`mt-0.5 flex-shrink-0 w-4 h-4 ${
+                        servico.highlighted ? 'text-white' : 'text-ana-primary'
+                      }`} />
+                      <span className={`font-montserrat text-xs ${
                         servico.highlighted ? 'text-white/90' : 'text-ana-dark/80'
                       }`}>
                         {feature}
@@ -202,18 +172,16 @@ const Servicos = () => {
                   ))}
                 </ul>
 
-                {/* CTA Button */}
                 <a
                   href="https://wa.me/5500000000000"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-full py-4 rounded-full font-montserrat font-medium text-center inline-flex items-center justify-center gap-2 transition-all duration-300 ${
+                  className={`w-full py-3 rounded-full font-montserrat font-medium text-center inline-flex items-center justify-center gap-2 transition-all ${
                     servico.highlighted
                       ? 'bg-white text-ana-primary hover:bg-ana-tertiary'
-                      : 'gradient-bg text-white hover:shadow-glow'
+                      : 'gradient-bg text-white'
                   }`}
                 >
-                  {servico.price === 'GRÁTIS' ? <Gift size={18} /> : null}
                   {servico.cta}
                 </a>
               </div>
@@ -221,20 +189,9 @@ const Servicos = () => {
           ))}
         </div>
 
-        {/* Note */}
-        <div className="reveal opacity-0 text-center mt-12 animation-delay-800">
-          <p className="font-montserrat text-sm text-ana-dark/60">
+        <div className="reveal opacity-0 text-center mt-10 animation-delay-400">
+          <p className="font-montserrat text-xs text-ana-dark/60">
             * Todos os serviços podem ser parcelados em até 12x no cartão.
-            <br />
-            Dúvidas?{' '}
-            <a 
-              href="https://wa.me/5500000000000" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-ana-primary hover:underline"
-            >
-              Fale comigo no WhatsApp
-            </a>
           </p>
         </div>
       </div>

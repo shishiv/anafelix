@@ -1,4 +1,4 @@
-import { Instagram, MessageCircle, Mail, MapPin, Heart } from 'lucide-react';
+import { Instagram, MessageCircle, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -166,17 +166,14 @@ const Footer = () => {
             <p className="font-montserrat text-xs text-white/40 text-center sm:text-left">
               © {currentYear} Ana Felix - Terapeuta Holística. Todos os direitos reservados.
             </p>
-            <p className="font-montserrat text-xs text-white/40 flex items-center gap-1">
-              Desenvolvido com <Heart size={12} className="text-ana-secondary fill-ana-secondary" /> por TriânguloTEC
+            <p className="font-montserrat text-xs text-white/40">
+              Desenvolvido por TriânguloTEC
             </p>
           </div>
         </div>
       </div>
 
-      {/* Decorative Om */}
-      <div className="absolute bottom-0 right-0 text-white opacity-[0.02] text-[30rem] font-serif pointer-events-none leading-none">
-        ॐ
-      </div>
+
     </footer>
   );
 };
