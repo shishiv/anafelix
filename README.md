@@ -1,73 +1,102 @@
-# React + TypeScript + Vite
+# ✨ Ana Felix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern landing page showcase with advanced animations — Framer Motion & GSAP excellence.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design** — Flawless on mobile, tablet, and desktop
+- **SEO Optimized** — Meta tags, sitemap, semantic HTML
+- **Smooth Animations** — Framer Motion page transitions
+- **Scroll Effects** — GSAP scroll-triggered animations and parallax
+- **Micro-interactions** — Delightful hover states and button effects
+- **Performance First** — Optimized images, lazy loading, minimal bundle
+- **Accessibility** — ARIA labels, keyboard navigation, screen reader support
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Layer | Technology |
+|-------|-----------|
+| **Framework** | Next.js 14 (App Router) |
+| **UI Library** | React, TypeScript |
+| **Styling** | Tailwind CSS |
+| **Animations** | Framer Motion, GSAP |
+| **Performance** | Next/Image, lazy loading |
+| **Deployment** | Vercel |
 
-## Expanding the ESLint configuration
+## 🗺️ Roadmap
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [x] **Phase 1: Static Landing Page** — Next.js, responsive design, SEO
+- [ ] **Phase 2: Animation Layer** 🚧
+  - [ ] Framer Motion page transitions
+  - [ ] GSAP scroll-triggered animations
+  - [ ] Parallax effects on hero and sections
+  - [ ] Stagger animations for content reveals
+  - [ ] Micro-interactions (buttons, cards, links)
+- [ ] **Phase 3: Interactive Elements**
+  - [ ] 3D elements with Three.js / React Three Fiber
+  - [ ] Animated SVG illustrations
+  - [ ] Lottie animations for icons
+  - [ ] Custom cursor effects
+  - [ ] Interactive timeline/portfolio section
+- [ ] **Phase 4: Performance**
+  - [ ] Lighthouse score 100 across all metrics
+  - [ ] Image optimization and WebP conversion
+  - [ ] Bundle size < 150KB gzipped
+  - [ ] CDN delivery for static assets
+  - [ ] Preload critical resources
+- [ ] **Phase 5: Template System**
+  - [ ] Reusable animation presets library
+  - [ ] Component library with Storybook
+  - [ ] Theme system (light/dark mode)
+  - [ ] CMS integration (Sanity/Contentful)
+  - [ ] One-click deploy template
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+```bash
+# Install dependencies
+npm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Run development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:3000](http://localhost:3000) to view the landing page.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Build for Production
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
+npm start
 ```
+
+## 📁 Project Structure
+
+```
+anafelix/
+├── app/              # Next.js App Router pages
+├── components/       # Reusable React components
+├── public/           # Static assets (images, fonts)
+├── styles/           # Global CSS and Tailwind config
+└── lib/              # Utility functions
+```
+
+## 🎨 Animation Examples
+
+**Framer Motion:**
+- Page transitions with slide/fade
+- Content reveal on scroll (viewport triggers)
+- Stagger animations for lists
+
+**GSAP:**
+- Parallax backgrounds
+- SVG path animations
+- Timeline-based sequences
+
+## 📄 License
+
+MIT
+
+---
+
+**Built by Myke Matos — TriânguloTEC**
