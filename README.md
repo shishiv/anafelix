@@ -1,8 +1,8 @@
-# <img src="https://unpkg.com/lucide-static@latest/icons/sparkles.svg" width="32" height="32" alt="Ana Felix"> Ana Felix
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shishiv/shishiv/main/assets/icons/dark/sparkles.svg"><img src="https://raw.githubusercontent.com/shishiv/shishiv/main/assets/icons/light/sparkles.svg" width="32" height="32" alt="Ana Felix"></picture> Ana Felix
 
 A modern landing page showcase with seriously advanced animations. We're talking Framer Motion and GSAP excellence.
 
-## <img src="https://unpkg.com/lucide-static@latest/icons/eye.svg" width="20" height="20" alt="Features"> Features
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shishiv/shishiv/main/assets/icons/dark/eye.svg"><img src="https://raw.githubusercontent.com/shishiv/shishiv/main/assets/icons/light/eye.svg" width="20" height="20" alt="Features"></picture> Features
 
 - **Responsive Design** — Flawless on mobile, tablet, and desktop.
 - **SEO Optimized** — Meta tags, sitemap, semantic HTML—the works.
@@ -12,7 +12,7 @@ A modern landing page showcase with seriously advanced animations. We're talking
 - **Performance First** — Optimized images, lazy loading, minimal bundle.
 - **Accessibility** — ARIA labels, keyboard navigation, screen reader support.
 
-## <img src="https://unpkg.com/lucide-static@latest/icons/layers.svg" width="20" height="20" alt="Tech Stack"> Tech Stack
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shishiv/shishiv/main/assets/icons/dark/layers.svg"><img src="https://raw.githubusercontent.com/shishiv/shishiv/main/assets/icons/light/layers.svg" width="20" height="20" alt="Tech Stack"></picture> Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -23,7 +23,7 @@ A modern landing page showcase with seriously advanced animations. We're talking
 | **Performance** | Next/Image, lazy loading |
 | **Deployment** | Vercel |
 
-## <img src="https://unpkg.com/lucide-static@latest/icons/map.svg" width="20" height="20" alt="Roadmap"> Roadmap
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shishiv/shishiv/main/assets/icons/dark/map.svg"><img src="https://raw.githubusercontent.com/shishiv/shishiv/main/assets/icons/light/map.svg" width="20" height="20" alt="Roadmap"></picture> Roadmap
 
 - [x] **Phase 1: Static Landing Page** — Next.js, responsive design, SEO. Done!
 - [ ] **Phase 2: Animation Layer** 🚧
@@ -51,7 +51,7 @@ A modern landing page showcase with seriously advanced animations. We're talking
   - [ ] CMS integration (Sanity/Contentful)
   - [ ] One-click deploy template
 
-## <img src="https://unpkg.com/lucide-static@latest/icons/rocket.svg" width="20" height="20" alt="Getting Started"> Getting Started
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shishiv/shishiv/main/assets/icons/dark/rocket.svg"><img src="https://raw.githubusercontent.com/shishiv/shishiv/main/assets/icons/light/rocket.svg" width="20" height="20" alt="Getting Started"></picture> Getting Started
 
 ```bash
 # Install dependencies
