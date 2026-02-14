@@ -1,16 +1,16 @@
 # ✨ Ana Felix
 
-A landing page that's modern and uses some pretty advanced animations. I'm talking Framer Motion *and* GSAP.
+A modern landing page showcase with seriously advanced animations. We're talking Framer Motion and GSAP excellence.
 
 ## ✨ Features
 
-- **Responsive Design** — Looks great on phones, tablets, and desktops
-- **SEO Optimized** — Meta tags, sitemap, semantic HTML...the works
-- **Smooth Animations** — Page transitions using Framer Motion
-- **Scroll Effects** — GSAP scroll-triggered animations, plus parallax
-- **Micro-interactions** — Cool hover states and button effects
-- **Performance First** — Optimized images, lazy loading, small bundle size
-- **Accessibility** — ARIA labels, keyboard navigation, screen reader support
+- **Responsive Design** — Flawless on mobile, tablet, and desktop.
+- **SEO Optimized** — Meta tags, sitemap, semantic HTML—the works.
+- **Smooth Animations** — Framer Motion page transitions.
+- **Scroll Effects** — GSAP scroll-triggered animations and parallax.
+- **Micro-interactions** — Delightful hover states and button effects.
+- **Performance First** — Optimized images, lazy loading, minimal bundle.
+- **Accessibility** — ARIA labels, keyboard navigation, screen reader support.
 
 ## 🛠️ Tech Stack
 
