@@ -1,15 +1,15 @@
 # ✨ Ana Felix
 
-Modern landing page showcase with advanced animations — Framer Motion & GSAP excellence.
+A landing page that's modern and uses some pretty advanced animations. I'm talking Framer Motion *and* GSAP.
 
 ## ✨ Features
 
-- **Responsive Design** — Flawless on mobile, tablet, and desktop
-- **SEO Optimized** — Meta tags, sitemap, semantic HTML
-- **Smooth Animations** — Framer Motion page transitions
-- **Scroll Effects** — GSAP scroll-triggered animations and parallax
-- **Micro-interactions** — Delightful hover states and button effects
-- **Performance First** — Optimized images, lazy loading, minimal bundle
+- **Responsive Design** — Looks great on phones, tablets, and desktops
+- **SEO Optimized** — Meta tags, sitemap, semantic HTML...the works
+- **Smooth Animations** — Page transitions using Framer Motion
+- **Scroll Effects** — GSAP scroll-triggered animations, plus parallax
+- **Micro-interactions** — Cool hover states and button effects
+- **Performance First** — Optimized images, lazy loading, small bundle size
 - **Accessibility** — ARIA labels, keyboard navigation, screen reader support
 
 ## 🛠️ Tech Stack
@@ -25,7 +25,7 @@ Modern landing page showcase with advanced animations — Framer Motion & GSAP e
 
 ## 🗺️ Roadmap
 
-- [x] **Phase 1: Static Landing Page** — Next.js, responsive design, SEO
+- [x] **Phase 1: Static Landing Page** — Next.js, responsive design, SEO. Done!
 - [ ] **Phase 2: Animation Layer** 🚧
   - [ ] Framer Motion page transitions
   - [ ] GSAP scroll-triggered animations
@@ -39,7 +39,7 @@ Modern landing page showcase with advanced animations — Framer Motion & GSAP e
   - [ ] Custom cursor effects
   - [ ] Interactive timeline/portfolio section
 - [ ] **Phase 4: Performance**
-  - [ ] Lighthouse score 100 across all metrics
+  - [ ] Lighthouse score 100 across the board
   - [ ] Image optimization and WebP conversion
   - [ ] Bundle size < 150KB gzipped
   - [ ] CDN delivery for static assets
@@ -61,7 +61,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the landing page.
+Open [http://localhost:3000](http://localhost:3000) to see it live.
 
 ### Build for Production
 
@@ -84,8 +84,8 @@ anafelix/
 ## 🎨 Animation Examples
 
 **Framer Motion:**
-- Page transitions with slide/fade
-- Content reveal on scroll (viewport triggers)
+- Page transitions (slide/fade)
+- Content reveal on scroll
 - Stagger animations for lists
 
 **GSAP:**
@@ -100,3 +100,4 @@ MIT
 ---
 
 **Built by Myke Matos — TriânguloTEC**
+
